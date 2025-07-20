@@ -1,0 +1,83 @@
+digraph graphname {
+n120382 [shape=box,label="(120382)\nbullet.kill()\n`this.bullets.remove(bullet)\nbullet.destroy()"];
+n120381 [shape=box,label="(120381)"];
+n120380 [shape=box,label="(120380)\ntmp = true"];
+n120379 [shape=box,label="(120379)\nvar bullet = bullet.y\nvar tmp = flixel.FlxG.camera.y + flixel.FlxG.camera.height\ntmp = bullet < tmp"];
+n120378 [shape=box,label="(120378)\nvar tmp = ! tmp"];
+n120378 -> n120379[style="dashed",color="gray",label="then"];
+n120378 -> n120380[style="dashed",color="gray",label="else"];
+n120378 -> n120381[style="dashed",color="gray",label="next"];
+n120377 [shape=box,label="(120377)\ntmp = true"];
+n120376 [shape=box,label="(120376)\nvar bullet = bullet.y\nvar tmp = flixel.FlxG.camera.y\nvar tmp = bullet.get_height()\nvar tmp = tmp - tmp\ntmp = bullet < tmp"];
+n120375 [shape=box,label="(120375)\nvar tmp = ! tmp"];
+n120375 -> n120376[style="dashed",color="gray",label="then"];
+n120375 -> n120377[style="dashed",color="gray",label="else"];
+n120375 -> n120378[style="dashed",color="gray",label="next"];
+n120374 [shape=box,label="(120374)\ntmp = true"];
+n120373 [shape=box,label="(120373)\nvar bullet = bullet.y\nvar tmp = flixel.FlxG.camera.x + flixel.FlxG.camera.width\ntmp = bullet < tmp"];
+n120372 [shape=box,label="<function-end>
+(120372)"];
+n120371 [shape=box,label="<function-begin>
+(120371)\nvar tmp\nvar tmp\nvar tmp\nvar bullet = bullet.x\nvar tmp = flixel.FlxG.camera.x\nvar tmp = bullet.get_width()\nvar tmp = tmp - tmp\nvar tmp = ! bullet < tmp"];
+n120371 -> n120373[style="dashed",color="gray",label="then"];
+n120371 -> n120374[style="dashed",color="gray",label="else"];
+n120371 -> n120375[style="dashed",color="gray",label="next"];
+n120370 [shape=box,label="(120370)"];
+n120369 [shape=box,label="(120369)\nvar point = flixel.math.FlxBasePoint.pool.get().set(x, y)\npoint._inPool = false\nthis = point\nvar mousePos = cast this\nvar bullet = new games.shooter.Bullet(cast pos.x, cast pos.y, mousePos)\nvar pos = cast pos.x\nvar tmp = bullet.get_width()\nvar tmp = tmp / 2\nvar tmp = pos - tmp\nvar pos = cast pos.y\nvar tmp = bullet.get_height()\nvar tmp = tmp / 2\nvar tmp = pos - tmp\nbullet.setPosition(tmp, tmp)\nthis.bullets.add(bullet)"];
+n120368 [shape=box,label="(120368)\nx = 0"];
+n120367 [shape=box,label="(120367)\nvar this = x == null"];
+n120367 -> n120368[style="dashed",color="gray",label="then"];
+n120367 -> n120369[style="dashed",color="gray",label="next"];
+n120366 [shape=box,label="(120366)\ny = 0"];
+n120365 [shape=box,label="(120365)\nvar x = x\nvar y = y\nvar this = y == null"];
+n120365 -> n120366[style="dashed",color="gray",label="then"];
+n120365 -> n120367[style="dashed",color="gray",label="next"];
+n120364 [shape=box,label="(120364)\nx = 0"];
+n120363 [shape=box,label="(120363)\nvar this = x == null"];
+n120363 -> n120364[style="dashed",color="gray",label="then"];
+n120363 -> n120365[style="dashed",color="gray",label="next"];
+n120362 [shape=box,label="(120362)\ny = 0"];
+n120361 [shape=box,label="(120361)\nvar this\nvar x = x\nvar y = y\nvar this = y == null"];
+n120361 -> n120362[style="dashed",color="gray",label="then"];
+n120361 -> n120363[style="dashed",color="gray",label="next"];
+n120360 [shape=box,label="(120360)\nx = 0"];
+n120359 [shape=box,label="(120359)\nvar tmp = x == null"];
+n120359 -> n120360[style="dashed",color="gray",label="then"];
+n120359 -> n120361[style="dashed",color="gray",label="next"];
+n120358 [shape=box,label="(120358)\ny = 0"];
+n120357 [shape=box,label="(120357)\nvar pos = this.gun.getShootPoint()\nvar x = flixel.FlxG.mouse.x\nvar y = flixel.FlxG.mouse.y\nvar tmp = y == null"];
+n120357 -> n120358[style="dashed",color="gray",label="then"];
+n120357 -> n120359[style="dashed",color="gray",label="next"];
+n120356 [shape=box,label="(120356)\nthis.player.setPosition(cast playerBounds.x, cast playerBounds.y)\nvar tmp = flixel.FlxG.mouse._leftButton.current == cast 2"];
+n120356 -> n120357[style="dashed",color="gray",label="then"];
+n120356 -> n120370[style="dashed",color="gray",label="next"];
+n120355 [shape=box,label="(120355)\nvar y = this.walls.y + games.shooter.PlayState.wallOffset\nvar y = this.player.y\nvar y = this.walls.y\nvar y = this.walls.get_height()\nvar y = y + y\nvar y = games.shooter.PlayState.wallOffset * 1.8\nvar y = y - y\nvar y = Math.min(y, y)\nvar y = Math.max(y, y)\ncast playerBounds.set_y(y)"];
+n120354 [shape=box,label="(120354)"];
+n120354 -> n120355[style="dashed",color="gray",label="sub"];
+n120354 -> n120356[style="dashed",color="gray",label="next"];
+n120353 [shape=box,label="(120353)\nvar x = this.walls.x + games.shooter.PlayState.wallOffset\nvar x = this.player.x\nvar x = this.walls.x\nvar x = this.walls.get_width()\nvar x = x + x\nvar x = games.shooter.PlayState.wallOffset * 1.8\nvar x = x - x\nvar x = Math.min(x, x)\nvar x = Math.max(x, x)\ncast playerBounds.set_x(x)"];
+n120352 [shape=box,label="(120352)\nvar point = flixel.math.FlxBasePoint.pool.get().set(x, y)\npoint._inPool = false\nthis = point\nvar playerBounds = cast this"];
+n120352 -> n120353[style="dashed",color="gray",label="sub"];
+n120352 -> n120354[style="dashed",color="gray",label="next"];
+n120351 [shape=box,label="(120351)\nx = 0"];
+n120350 [shape=box,label="(120350)\nvar this = x == null"];
+n120350 -> n120351[style="dashed",color="gray",label="then"];
+n120350 -> n120352[style="dashed",color="gray",label="next"];
+n120349 [shape=box,label="(120349)\ny = 0"];
+n120348 [shape=box,label="(120348)\nvar x = x\nvar y = y\nvar this = y == null"];
+n120348 -> n120349[style="dashed",color="gray",label="then"];
+n120348 -> n120350[style="dashed",color="gray",label="next"];
+n120347 [shape=box,label="(120347)\nx = 0"];
+n120346 [shape=box,label="(120346)\nvar this = x == null"];
+n120346 -> n120347[style="dashed",color="gray",label="then"];
+n120346 -> n120348[style="dashed",color="gray",label="next"];
+n120345 [shape=box,label="(120345)\ny = 0"];
+n120344 [shape=box,label="<function-end>
+(120344)"];
+n120343 [shape=box,label="<function-begin>
+(120343)\nvar `this = this\nsuper.update(elapsed)\nvar a = flixel.FlxG.camera.zoom\nvar tmp = 0.8 - a\nvar tmp = 0.1 * tmp\nvar tmp = a + tmp\nflixel.FlxG.camera.set_zoom(tmp)\nvar this\nvar x = 0\nvar y = 0\nvar this = y == null"];
+n120343 -> n120345[style="dashed",color="gray",label="then"];
+n120343 -> n120346[style="dashed",color="gray",label="next"];
+n1 [shape=box,label="<root>
+(1)"];
+}

@@ -1,0 +1,276 @@
+digraph graphname {
+	node [shape=plaintext];
+n120382[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120382) BKConditional</td></tr>
+	<tr><td port="e0" align="left">bullet.kill()</td></tr>
+	<tr><td port="e1" align="left">`this.bullets.remove(bullet)</td></tr>
+	<tr><td port="e2" align="left">bullet.destroy()</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120381[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120381) BKNormal</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120380[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120380) BKConditional</td></tr>
+	<tr><td port="e0" align="left">tmp = true</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120379[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120379) BKConditional</td></tr>
+	<tr><td port="e0" align="left">var bullet = bullet.y</td></tr>
+	<tr><td port="e1" align="left">var tmp = flixel.FlxG.camera.y + flixel.FlxG.camera.height</td></tr>
+	<tr><td port="e2" align="left">tmp = bullet &lt; tmp</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120378[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120378) BKNormal</td></tr>
+	<tr><td port="e0" align="left">var tmp = ! tmp</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120377[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120377) BKConditional</td></tr>
+	<tr><td port="e0" align="left">tmp = true</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120376[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120376) BKConditional</td></tr>
+	<tr><td port="e0" align="left">var bullet = bullet.y</td></tr>
+	<tr><td port="e1" align="left">var tmp = flixel.FlxG.camera.y</td></tr>
+	<tr><td port="e2" align="left">var tmp = bullet.get_height()</td></tr>
+	<tr><td port="e3" align="left">var tmp = tmp - tmp</td></tr>
+	<tr><td port="e4" align="left">tmp = bullet &lt; tmp</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120375[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120375) BKNormal</td></tr>
+	<tr><td port="e0" align="left">var tmp = ! tmp</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120374[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120374) BKConditional</td></tr>
+	<tr><td port="e0" align="left">tmp = true</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120373[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120373) BKConditional</td></tr>
+	<tr><td port="e0" align="left">var bullet = bullet.y</td></tr>
+	<tr><td port="e1" align="left">var tmp = flixel.FlxG.camera.x + flixel.FlxG.camera.width</td></tr>
+	<tr><td port="e2" align="left">tmp = bullet &lt; tmp</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120372[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120372) BKFunctionEnd</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120371[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120371) BKFunctionBegin</td></tr>
+	<tr><td port="e0" align="left">var tmp</td></tr>
+	<tr><td port="e1" align="left">var tmp</td></tr>
+	<tr><td port="e2" align="left">var tmp</td></tr>
+	<tr><td port="e3" align="left">var bullet = bullet.x</td></tr>
+	<tr><td port="e4" align="left">var tmp = flixel.FlxG.camera.x</td></tr>
+	<tr><td port="e5" align="left">var tmp = bullet.get_width()</td></tr>
+	<tr><td port="e6" align="left">var tmp = tmp - tmp</td></tr>
+	<tr><td port="e7" align="left">var tmp = ! bullet &lt; tmp</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120370[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120370) BKNormal</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120369[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120369) BKNormal</td></tr>
+	<tr><td port="e0" align="left">var point = flixel.math.FlxBasePoint.pool.get().set(x, y)</td></tr>
+	<tr><td port="e1" align="left">point._inPool = false</td></tr>
+	<tr><td port="e2" align="left">this = point</td></tr>
+	<tr><td port="e3" align="left">var mousePos = cast this</td></tr>
+	<tr><td port="e4" align="left">var bullet = new games.shooter.Bullet(cast pos.x, cast pos.y, mousePos)</td></tr>
+	<tr><td port="e5" align="left">var pos = cast pos.x</td></tr>
+	<tr><td port="e6" align="left">var tmp = bullet.get_width()</td></tr>
+	<tr><td port="e7" align="left">var tmp = tmp / 2</td></tr>
+	<tr><td port="e8" align="left">var tmp = pos - tmp</td></tr>
+	<tr><td port="e9" align="left">var pos = cast pos.y</td></tr>
+	<tr><td port="e10" align="left">var tmp = bullet.get_height()</td></tr>
+	<tr><td port="e11" align="left">var tmp = tmp / 2</td></tr>
+	<tr><td port="e12" align="left">var tmp = pos - tmp</td></tr>
+	<tr><td port="e13" align="left">bullet.setPosition(tmp, tmp)</td></tr>
+	<tr><td port="e14" align="left">this.bullets.add(bullet)</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120368[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120368) BKConditional</td></tr>
+	<tr><td port="e0" align="left">x = 0</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120367[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120367) BKNormal</td></tr>
+	<tr><td port="e0" align="left">var this = x == null</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120366[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120366) BKConditional</td></tr>
+	<tr><td port="e0" align="left">y = 0</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120365[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120365) BKNormal</td></tr>
+	<tr><td port="e0" align="left">var x = x</td></tr>
+	<tr><td port="e1" align="left">var y = y</td></tr>
+	<tr><td port="e2" align="left">var this = y == null</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120364[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120364) BKConditional</td></tr>
+	<tr><td port="e0" align="left">x = 0</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120363[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120363) BKNormal</td></tr>
+	<tr><td port="e0" align="left">var this = x == null</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120362[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120362) BKConditional</td></tr>
+	<tr><td port="e0" align="left">y = 0</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120361[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120361) BKNormal</td></tr>
+	<tr><td port="e0" align="left">var this</td></tr>
+	<tr><td port="e1" align="left">var x = x</td></tr>
+	<tr><td port="e2" align="left">var y = y</td></tr>
+	<tr><td port="e3" align="left">var this = y == null</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120360[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120360) BKConditional</td></tr>
+	<tr><td port="e0" align="left">x = 0</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120359[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120359) BKNormal</td></tr>
+	<tr><td port="e0" align="left">var tmp = x == null</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120358[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120358) BKConditional</td></tr>
+	<tr><td port="e0" align="left">y = 0</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120357[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120357) BKConditional</td></tr>
+	<tr><td port="e0" align="left">var pos = this.gun.getShootPoint()</td></tr>
+	<tr><td port="e1" align="left">var x = flixel.FlxG.mouse.x</td></tr>
+	<tr><td port="e2" align="left">var y = flixel.FlxG.mouse.y</td></tr>
+	<tr><td port="e3" align="left">var tmp = y == null</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120356[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120356) BKNormal</td></tr>
+	<tr><td port="e0" align="left">this.player.setPosition(cast playerBounds.x, cast playerBounds.y)</td></tr>
+	<tr><td port="e1" align="left">var tmp = flixel.FlxG.mouse._leftButton.current == cast 2</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120355[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120355) BKSub</td></tr>
+	<tr><td port="e0" align="left">var y = this.walls.y + games.shooter.PlayState.wallOffset</td></tr>
+	<tr><td port="e1" align="left">var y = this.player.y</td></tr>
+	<tr><td port="e2" align="left">var y = this.walls.y</td></tr>
+	<tr><td port="e3" align="left">var y = this.walls.get_height()</td></tr>
+	<tr><td port="e4" align="left">var y = y + y</td></tr>
+	<tr><td port="e5" align="left">var y = games.shooter.PlayState.wallOffset * 1.8</td></tr>
+	<tr><td port="e6" align="left">var y = y - y</td></tr>
+	<tr><td port="e7" align="left">var y = Math.min(y, y)</td></tr>
+	<tr><td port="e8" align="left">var y = Math.max(y, y)</td></tr>
+	<tr><td port="e9" align="left">cast playerBounds.set_y(y)</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120354[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120354) BKNormal</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120353[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120353) BKSub</td></tr>
+	<tr><td port="e0" align="left">var x = this.walls.x + games.shooter.PlayState.wallOffset</td></tr>
+	<tr><td port="e1" align="left">var x = this.player.x</td></tr>
+	<tr><td port="e2" align="left">var x = this.walls.x</td></tr>
+	<tr><td port="e3" align="left">var x = this.walls.get_width()</td></tr>
+	<tr><td port="e4" align="left">var x = x + x</td></tr>
+	<tr><td port="e5" align="left">var x = games.shooter.PlayState.wallOffset * 1.8</td></tr>
+	<tr><td port="e6" align="left">var x = x - x</td></tr>
+	<tr><td port="e7" align="left">var x = Math.min(x, x)</td></tr>
+	<tr><td port="e8" align="left">var x = Math.max(x, x)</td></tr>
+	<tr><td port="e9" align="left">cast playerBounds.set_x(x)</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120352[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120352) BKNormal</td></tr>
+	<tr><td port="e0" align="left">var point = flixel.math.FlxBasePoint.pool.get().set(x, y)</td></tr>
+	<tr><td port="e1" align="left">point._inPool = false</td></tr>
+	<tr><td port="e2" align="left">this = point</td></tr>
+	<tr><td port="e3" align="left">var playerBounds = cast this</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120351[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120351) BKConditional</td></tr>
+	<tr><td port="e0" align="left">x = 0</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120350[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120350) BKNormal</td></tr>
+	<tr><td port="e0" align="left">var this = x == null</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120349[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120349) BKConditional</td></tr>
+	<tr><td port="e0" align="left">y = 0</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120348[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120348) BKNormal</td></tr>
+	<tr><td port="e0" align="left">var x = x</td></tr>
+	<tr><td port="e1" align="left">var y = y</td></tr>
+	<tr><td port="e2" align="left">var this = y == null</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120347[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120347) BKConditional</td></tr>
+	<tr><td port="e0" align="left">x = 0</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120346[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120346) BKNormal</td></tr>
+	<tr><td port="e0" align="left">var this = x == null</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120345[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120345) BKConditional</td></tr>
+	<tr><td port="e0" align="left">y = 0</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120344[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120344) BKFunctionEnd</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n120343[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(120343) BKFunctionBegin</td></tr>
+	<tr><td port="e0" align="left">var `this = this</td></tr>
+	<tr><td port="e1" align="left">super.update(elapsed)</td></tr>
+	<tr><td port="e2" align="left">var a = flixel.FlxG.camera.zoom</td></tr>
+	<tr><td port="e3" align="left">var tmp = 0.8 - a</td></tr>
+	<tr><td port="e4" align="left">var tmp = 0.1 * tmp</td></tr>
+	<tr><td port="e5" align="left">var tmp = a + tmp</td></tr>
+	<tr><td port="e6" align="left">flixel.FlxG.camera.set_zoom(tmp)</td></tr>
+	<tr><td port="e7" align="left">var this</td></tr>
+	<tr><td port="e8" align="left">var x = 0</td></tr>
+	<tr><td port="e9" align="left">var y = 0</td></tr>
+	<tr><td port="e10" align="left">var this = y == null</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n1[label=<<table BORDER="0" CELLBORDER="1" CELLSPACING="0">
+	<tr><td port="in" bgcolor="lightgray">(1) BKRoot</td></tr>
+	<tr><td port="out"></td></tr>
+</table>>];
+n1:out -> n120343:in[label="CFGFunction"];
+}
