@@ -136,4 +136,7 @@ class MathUtils {
 
 
 
-//hola
+// hola, este es un mensaje oculto, la verdad, empeze esto porque realmente estaba aburrido, Funkin AE (Another Engine) me aburrio, Stardust, tambien logro aburrirme
+// y recorde que hacia hace 4 años, descargar assets de itch.io y programar juegos con esos assets
+// creo que habia tomado esa idea de un youtuber llamado DEVALEN, o pudo ser otro, pero lo importante es que esa idea
+// es la base de lo que estoy haciendo hoy, gracias por leer

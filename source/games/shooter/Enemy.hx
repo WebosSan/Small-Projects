@@ -74,7 +74,7 @@ class Enemy extends FlxSprite
 
 		_sineWave += 0.1;
 
-		if (Manager.initialized)
+		if (Manager.initialized && !Manager.isDead)
 		{
 			if (isAlive)
 			{
